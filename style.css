@@ -6,8 +6,23 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #000100;
+  color: #fff;
+}
+
 .container {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+}
+
+@code {
+    font-family: myFirstFont;
+    src: url('code.otf');
+}
+
+h1 {
+  font-family: code;
+  font-variant: small-caps;
 }
