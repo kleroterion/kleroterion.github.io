@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,15 @@
 html {
   background-color: #000100;
   color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 110px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -17,12 +28,161 @@ html {
   flex-direction: column;
 }
 
-@code {
-    font-family: myFirstFont;
+@font-face {
+    font-family: code;
     src: url('code.otf');
 }
 
-h1 {
+.title {
   font-family: code;
-  font-variant: small-caps;
+  letter-spacing: 0.4em;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+center {
+  font-size: 24px;
+}
+
+.light-title {
+  color: #000;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1030;
+}
+
+.light-menu {
+    background-color: #fff;
+    color: #000;
+}
+
+.item-menu {
+  padding: 0 10px;
+}
+
+.last-child-menu {
+  padding-right: 40px;
+}
+
+#menu-center {
+  margin: 0 auto;
+}
+
+#menu-center ul {
+}
+
+#menu-center ul li {
+    list-style: none;
+    display: inline;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  opacity: .8;
+}
+
+.light-menu-link {
+  color: #000;
+  opacity: .8;
+
+}
+
+.light-menu-link:hover {
+  font-weight: bold;
+}
+
+.menu-link:hover {
+  font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+}
+
+
+.space-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.space-between li {
+  line-height: 70px;
+}
+
+.flex-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.description {
+  position: relative;
+  top: -40px;
+}
+
+#home {
+  background-color: #000100;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+hr {
+  margin: 70px;
+}
+
+#vision {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+#useCase {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+#about {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+#contact {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 24px;
+  color: rgba(255, 255, 255, 0.541176);
+  width: 100%;
+  min-height: 100px;
 }
