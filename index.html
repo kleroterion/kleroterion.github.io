@@ -23,7 +23,7 @@
                   <a href="#useCase" class="menu-link">use cases</a>
                 </li>
                 <li class="item-menu">
-                  <a href="#about" class="menu-link">how works</a>
+                  <a href="#howWorks" class="menu-link">how works</a>
                 </li>
                 <li class="item-menu">
                   <a href="#about" class="menu-link">white paper</a>
@@ -43,7 +43,7 @@
     <div id="home">
       <div class="subtitle">
           <center>
-            <img src="img/kleroterion.gif" /> 
+            <img src="img/animated_map_virgin.gif" />
           </center>
 
           <div class="description">
@@ -55,14 +55,106 @@
     <div id="vision">
       <hr />
       <h1>OUR VISION</h1>
+      <p class="vision">
+        <strong>KLEROTERION</strong> aims at providing a decentralized cour
+        running on the blockchain ethereum to arbitrate disputes.
+        <br  />
+        <br  />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sollicitudin nulla eget tempus. Curabitur vitae nisi nec risus fringilla pharetra vitae vitae nisi. Sed maximus tellus eget ipsum dictum pulvinar. In lacus lorem, ornare hendrerit purus dignissim, finibus interdum sapien. Maecenas fringilla lectus ligula, ut facilisis magna blandit quis. Fusce mollis erat ac orci aliquet, ac viverra urna ultricies. Proin suscipit, turpis sagittis vestibulum consectetur, magna mi luctus est, quis tincidunt elit velit et nisl. In sed molestie libero. Maecenas non ligula dui. Mauris tristique sagittis sagittis. Pellentesque ultricies, mi in sollicitudin vulputate, justo sapien aliquam magna, a ultricies risus nunc ac arcu. Vivamus justo ex, imperdiet at gravida aliquam, consequat ac eros. Duis vitae nibh nec diam condimentum blandit et at est. Suspendisse nisi risus, ullamcorper eu vulputate sed, imperdiet ut magna. Aenean efficitur iaculis vulputate.
+
+      </p>
     </div>
     <div id="useCase">
       <hr />
-      <h1>Use case</h1>
+      <h1>USE CASES</h1>
+      <table class="rwd-table">
+        <tr>
+          <td class="item-td">
+            <strong>Escrow system</strong>
+          </td>
+          <td>
+            A buyer and a seller would create a contract where the funds can be retrieved by two out of three parties. The court would be the third party. In most cases the court would do nothing, but in case of a dispute, the court would arbitrate and give the fund to either the buyer or the seller.
+          </td>
+        </tr>
+        <tr>
+          <td class="item-td">
+            <strong>Emergency mechanism in smart contracts</strong>
+          </td>
+          <td>
+            When some funds are at risk or stucked in a smart contract because of conceptual or programming mistakes, the court could agree to move them into a new version of the smart contract.
+          </td>
+        </tr>
+        <tr>
+          <td class="item-td">
+            <strong>Neutral party for smart-contract</strong>
+          </td>
+          <td>
+            For example in an insurance contract, where the insurer refuse to pay the policyholder, the case would be arbitrated by the decentralized court.
+          </td>
+        </tr>
+      </table>
     </div>
-    <div id="about">
+    <div id="howWorks">
       <hr />
-      <h1>About</h1>
+      <h1>How works</h1>
+      <div class="parent">
+        <div class="col right">
+          <p>
+            Parties would select the court to arbitrate their contracts in case of disputes.
+            <br />
+            Dispute will be first handled by arbitrators, but parties will have the possibility to appeal to a jury system. Both arbitrators and jury members will have game theoretical incentive to arbitrate disputes in an honest manner.
+          </p>
+        </div>
+        <div class="col">
+          <canvas id="kleroterion-schema" width="600" height="400"></canvas>
+          <script>
+            var canvas = document.getElementById("kleroterion-schema");
+            if (canvas.getContext)
+            {
+              var ctx = canvas.getContext('2d');
+              ctx.lineWidth = "3";
+              ctx.strokeStyle = "#fff";
+              ctx.strokeRect(0, 0, 170, 70);
+
+              ctx.strokeRect(200, 0, 170, 70);
+
+              ctx.strokeRect(400, 0, 170, 70);
+
+              ctx.strokeRect(0, 90, 570, 70);
+
+              ctx.strokeRect(0, 180, 270, 70);
+
+              ctx.strokeRect(300, 180, 270, 70);
+
+              ctx.strokeRect(0, 270, 120, 70);
+
+              ctx.strokeRect(150, 270, 120, 70);
+
+              ctx.strokeRect(300, 270, 120, 70);
+
+              ctx.strokeRect(450, 270, 120, 70);
+
+
+              ctx.font="24px Montserrat";
+              ctx.textAlign="center";
+              ctx.textBaseline = "middle";
+              ctx.fillStyle = "#fff";
+
+
+              ctx.fillText("Escrow", 85, 35);
+
+              ctx.fillText("Funding", 285, 35);
+
+              ctx.fillText("Insurance", 485, 35);
+
+              ctx.fillText("KLEROTERION", 300, 125);
+
+              ctx.fillText("Finance", 135, 215);
+            }
+          </script>
+        </div>
+      </div>
+
     </div>
     <div id="contact">
       <hr />
@@ -74,11 +166,5 @@
       <p>Decentralized court project</p>
     </div>
   </div>
-  </div>
-
-
-
-
-
 </body>
 </html>
