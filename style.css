@@ -170,8 +170,14 @@ hr {
   text-align: center;
 }
 
+#whitePaper {
+  width: 100%;
+  text-align: center;
+  height: 30rem;
+}
+
 #contact {
-  height: 100vh;
+  height: 27rem;
   width: 100%;
   text-align: center;
 }
@@ -284,4 +290,30 @@ hr {
   float: right;
   width: 500px;
   text-align: right;
+}
+
+.download {
+  margin-top: 7rem;
+}
+
+.white-paper {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #ff0080;
+  font-size: 20px;
+}
+
+.white-paper:hover {
+  border-color: #ff0080;
+}
+
+.contact {
+  margin-top: 3rem;
+}
+
+.mail {
+  font-size: 140px;
+  text-decoration: none;
+  color: #ff0080;
 }
