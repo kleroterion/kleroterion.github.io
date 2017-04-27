@@ -10,7 +10,7 @@
 
 html {
   background-color: #000100;
-  color: #fff;
+  color: #448fda;
   width: 100%;
   height: 100%;
 }
@@ -18,7 +18,6 @@ html {
 body {
   width: 100%;
   height: 100%;
-  padding-top: 110px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -39,6 +38,7 @@ body {
   line-height: 40px;
   padding-left: 20px;
   font-size: 24px;
+  color: #fff;
 }
 
 center {
@@ -107,7 +107,7 @@ center {
 }
 
 .active {
-  font-weight: bold;
+  color: #ff0080;
 }
 
 .space-between {
@@ -138,26 +138,25 @@ center {
   text-align: center;
 }
 
-.description {
-  position: relative;
-  top: -40px;
-}
 
 #home {
-  background-color: #000100;
   min-height: 100%;
-  width: 100%;
+  width: 100vh;
   overflow: hidden;
 }
 
 hr {
-  margin: 70px;
+  background-color: #448fda;
+  height: 1px;
+  border: 0;
+
 }
 
 #vision {
   width: 100%;
-  text-align: center;
   margin: 0 auto;
+  background-color: #000;
+  display: flex;
 }
 
 #useCase {
@@ -193,16 +192,13 @@ hr {
 }
 
 .vision {
-  margin-top: 5rem;
-  margin: 0 auto;
-  padding-top: 40px;
-  max-width: 600px;
-  text-align: center;
+  margin: 2rem 0 3rem 5rem;
+  padding-right: 5rem;
 }
 
 .rwd-table {
   border-spacing: 0;
-    border-collapse: collapse;
+  border-collapse: collapse;
   margin: 5rem auto;
   max-width: 800px;
   text-align: left;
@@ -240,7 +236,7 @@ hr {
   .rwd-table td {
     display: table-cell;
     padding: .25em .5em;
-    border: 1px solid #fff;
+    border: 1px solid #448fda;
   }
   .rwd-table td:first-child {
     padding-left: 0;
@@ -256,7 +252,6 @@ hr {
 }
 
 .rwd-table {
-  color: #fff;
   overflow: hidden;
 }
 
@@ -316,4 +311,35 @@ hr {
   font-size: 140px;
   text-decoration: none;
   color: #ff0080;
+}
+
+#canvas-wrap { position:relative } /* Make this a positioned parent */
+#overlay     {
+  position:absolute;
+  top: 40vh;
+  text-align: center;
+  width: 100%;
+
+}
+
+#overlay h1  {
+  font-size: 5rem;
+}
+
+#overlay h2 {
+  font-size: 3rem;
+}
+
+.h-title {
+  margin: 5rem 0 1rem 5rem;
+}
+
+.h-title-center {
+  margin: 5rem 0;
+}
+
+#justice {
+  width: 400px;
+  position: relative;
+  top: -4px;
 }

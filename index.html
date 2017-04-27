@@ -6,8 +6,21 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="scrolling-nav.js"></script>
+
+  <style type="text/css" media="screen">
+    .nodes {
+      border-bottom: 1px solid #448fda;
+    }
+  </style>
 </head>
 <body>
+  <div id="canvas-wrap">
+    <canvas class='nodes'></canvas>
+    <div id="overlay">
+      <h1>DECENTRALIZED COURT</h1>
+      <h2>opt-in legal crypto institution</h2>
+    </div>
+  </div>
   <div class="container">
     <div>
       <nav class="menu">
@@ -37,32 +50,23 @@
         </div>
       </nav>
     </div>
-    <div id="home">
-      <div class="subtitle">
-          <center>
-            <img src="img/kleroterion-world.gif" />
-          </center>
-
-          <div class="description">
-            <h1>DECENTRALIZED COURT</h1>
-            <h2>opt-in legal crypto institution</h2>
-          </div>
-        </div>
-    </div>
+    <div id="home"></div>
     <div id="vision">
-      <hr />
-      <h1>OUR VISION</h1>
-      <p class="vision">
-        <strong>KLEROTERION</strong> aims at providing a decentralized cour
-        running on the blockchain ethereum to arbitrate disputes.
-        <br  />
-        <br  />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar sollicitudin nulla eget tempus. Curabitur vitae nisi nec risus fringilla pharetra vitae vitae nisi. Sed maximus tellus eget ipsum dictum pulvinar. In lacus lorem, ornare hendrerit purus dignissim, finibus interdum sapien. Maecenas fringilla lectus ligula, ut facilisis magna blandit quis. Fusce mollis erat ac orci aliquet, ac viverra urna ultricies. Proin suscipit, turpis sagittis vestibulum consectetur, magna mi luctus est, quis tincidunt elit velit et nisl. In sed molestie libero. Maecenas non ligula dui. Mauris tristique sagittis sagittis. Pellentesque ultricies, mi in sollicitudin vulputate, justo sapien aliquam magna, a ultricies risus nunc ac arcu. Vivamus justo ex, imperdiet at gravida aliquam, consequat ac eros. Duis vitae nibh nec diam condimentum blandit et at est. Suspendisse nisi risus, ullamcorper eu vulputate sed, imperdiet ut magna. Aenean efficitur iaculis vulputate.
-      </p>
+      <div>
+        <h1 class="h-title">OUR VISION</h1>
+        <p class="vision">
+          <strong>KLEROTERION</strong> aims at providing a decentralized cour
+          running on the blockchain ethereum to arbitrate disputes.
+        </p>
+      </div>
+      <div>
+        <canvas id="justice" width=400 height=350></canvas>
+      </div>
+
     </div>
     <div id="useCase">
       <hr />
-      <h1>USE CASES</h1>
+      <h1 class="h-title-center">USE CASES</h1>
       <table class="rwd-table">
         <tr>
           <td class="item-td">
@@ -92,7 +96,7 @@
     </div>
     <div id="howWorks">
       <hr />
-      <h1>HOW WORKS</h1>
+      <h1 class="h-title-center">HOW WORKS</h1>
       <div class="parent">
         <div class="col right">
           <p>
@@ -111,7 +115,7 @@
             {
               var ctx = canvas.getContext('2d');
               ctx.lineWidth = "3";
-              ctx.strokeStyle = "#fff";
+              ctx.strokeStyle = "#448fda";
               ctx.strokeRect(0, 0, 170, 70);
 
               ctx.strokeRect(200, 0, 170, 70);
@@ -132,22 +136,15 @@
 
               ctx.strokeRect(450, 270, 120, 70);
 
-
-              ctx.font="24px Montserrat, sans-serif";
+              ctx.font="24px sans-serif";
               ctx.textAlign="center";
               ctx.textBaseline = "middle";
-              ctx.fillStyle = "#fff";
-
-
+              ctx.fillStyle = "#448fda";
               ctx.fillText("Escrow", 85, 35);
-
               ctx.fillText("Funding", 285, 35);
-
               ctx.fillText("Insurance", 485, 35);
-
               ctx.fillText("KLEROTERION", 300, 125);
-
-              ctx.fillText("Finance", 135, 215);
+              ctx.fillText("Finance", 135, 215);//render your page
             }
           </script>
         </div>
@@ -155,7 +152,7 @@
     </div>
     <div id="whitePaper">
       <hr />
-      <h1>WHITE PAPER</h1>
+      <h1 class="h-title-center">WHITE PAPER</h1>
       <div class="download">
         <a
           href="https://github.com/ethercourt/workspace/raw/master/decentralized-court/whitePaper/DAC.pdf"
@@ -166,15 +163,17 @@
     </div>
     <div id="contact">
       <hr />
-      <h1>CONTACT</h1>
+      <h1 class="h-title-center">CONTACT</h1>
       <div class="contact">
         <a href='mailto:clemage@live.fr' class='mail'>✉</a>
       </div>
     </div>
+
     <div class="footer">
       <h3>KLEROTERION</h3>
       <p>Decentralized court project</p>
     </div>
   </div>
+    <script src="justice.js"></script>
 </body>
 </html>
