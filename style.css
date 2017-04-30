@@ -13,18 +13,21 @@ html {
   color: #448fda;
   width: 100%;
   height: 100%;
+  font-size:100%;
 }
 
 body {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
 }
 
 .container {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @font-face {
@@ -39,10 +42,6 @@ body {
   padding-left: 20px;
   font-size: 24px;
   color: #fff;
-}
-
-center {
-  font-size: 24px;
 }
 
 .light-title {
@@ -61,8 +60,8 @@ center {
 }
 
 .light-menu {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 .item-menu {
@@ -87,7 +86,7 @@ center {
 
 .menu-link {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.1rem;
   text-decoration: none;
   opacity: .8;
 }
@@ -162,6 +161,8 @@ hr {
 #useCase {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #howWorks {
@@ -193,7 +194,6 @@ hr {
 
 .vision {
   margin: 2rem 0 3rem 5rem;
-  padding-right: 5rem;
 }
 
 .rwd-table {
@@ -296,7 +296,7 @@ hr {
   border: 1px solid #fff;
   text-decoration: none;
   color: #ff0080;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .white-paper:hover {
@@ -342,4 +342,35 @@ hr {
   width: 400px;
   position: relative;
   top: -4px;
+}
+
+@media all and (max-width: 480px) {
+  body {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+   font-size: 2rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #kleroterion-schema {
+    display: none;
+  }
+
+  #overlay h1, #overlay h2 {
+    font-size: 3rem;
+    display: none;
+  }
+
+  canvas {
+    display: none;
+  }
 }
