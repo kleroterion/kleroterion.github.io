@@ -34,13 +34,13 @@
                   <a href="#vision" class="menu-link">our vision</a>
                 </li>
                 <li class="item-menu">
-                  <a href="#useCase" class="menu-link">use cases</a>
+                  <a href="#use-cases" class="menu-link">use cases</a>
                 </li>
                 <li class="item-menu">
-                  <a href="#howWorks" class="menu-link">how works</a>
+                  <a href="#how-works" class="menu-link">how works</a>
                 </li>
                 <li class="item-menu">
-                  <a href="#whitePaper" class="menu-link">white paper</a>
+                  <a href="#white-paper" class="menu-link">white paper</a>
                 </li>
                 <li class="item-menu last-child-menu ">
                   <a href="#contact" class="menu-link">contact</a>
@@ -52,53 +52,61 @@
       </nav>
     </div>
     <div id="home"></div>
-    <div id="vision">
-      <div>
+    <div class="block block-first" id="vision">
+      <div class="block-vision-text">
         <h1 class="h-title">OUR VISION</h1>
-        <p class="vision">
-          <strong>KLEROTERION</strong> aims at providing a decentralized cour
-          running on the blockchain ethereum to arbitrate disputes.
-        </p>
+        <div>
+          <p>
+            <strong>KLEROTERION</strong> aims at providing a decentralized cour
+            running on the blockchain ethereum to arbitrate disputes.
+          </p>
+        </div>
       </div>
       <div>
-        <canvas id="justice" width=400 height=350></canvas>
+        <canvas class='canvas-justice' width=400 height=210></canvas>
       </div>
     </div>
-    <div id="useCase">
-      <hr />
-      <h1 class="h-title-center">USE CASES</h1>
-      <table class="rwd-table">
-        <tr>
-          <td class="item-td">
-            <strong>Escrow system</strong>
-          </td>
-          <td>
-            A buyer and a seller would create a contract where the funds can be retrieved by two out of three parties. The court would be the third party. In most cases the court would do nothing, but in case of a dispute, the court would arbitrate and give the fund to either the buyer or the seller.
-          </td>
-        </tr>
-        <tr>
-          <td class="item-td">
-            <strong>Emergency mechanism in smart contracts</strong>
-          </td>
-          <td>
-            When some funds are at risk or stucked in a smart contract because of conceptual or programming mistakes, the court could agree to move them into a new version of the smart contract.
-          </td>
-        </tr>
-        <tr>
-          <td class="item-td">
-            <strong>Neutral party for smart-contract</strong>
-          </td>
-          <td>
-            For example in an insurance contract, where the insurer refuse to pay the policyholder, the case would be arbitrated by the decentralized court.
-          </td>
-        </tr>
-      </table>
+    <div class="block" id="use-cases">
+      <div class="block-use-cases-text">
+        <h1 class="h-title">USE CASES</h1>
+        <div>
+        </div>
+      </div>
+      <div>
+        <table class="rwd-table">
+          <tr>
+            <td class="item-td">
+              <strong>Escrow system</strong>
+            </td>
+            <td>
+              A buyer and a seller would create a contract where the funds can be retrieved by two out of three parties. The court would be the third party. In most cases the court would do nothing, but in case of a dispute, the court would arbitrate and give the fund to either the buyer or the seller.
+            </td>
+          </tr>
+          <tr>
+            <td class="item-td">
+              <strong>Emergency mechanism in smart contracts</strong>
+            </td>
+            <td>
+              When some funds are at risk or stucked in a smart contract because of conceptual or programming mistakes, the court could agree to move them into a new version of the smart contract.
+            </td>
+          </tr>
+          <tr>
+            <td class="item-td">
+              <strong>Neutral party for smart-contract</strong>
+            </td>
+            <td>
+              For example in an insurance contract, where the insurer refuse to pay the policyholder, the case would be arbitrated by the decentralized court.
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
-    <div id="howWorks">
-      <hr />
-      <h1 class="h-title-center">HOW WORKS</h1>
-      <div class="parent">
-        <div class="col right">
+    <div  class="block" id="how-works">
+      <div>
+        <h1 class="h-title">HOW WORKS</h1>
+      </div>
+      <div>
+        <div>
           <p>
             There is several subcourt for each specialization lorem ipsum.
             <br /><br />
@@ -107,7 +115,7 @@
             Dispute will be first handled by arbitrators, but parties will have the possibility to appeal to a jury system. Both arbitrators and jury members will have game theoretical incentive to arbitrate disputes in an honest manner.
           </p>
         </div>
-        <div class="col">
+        <div>
           <canvas id="kleroterion-schema" width="600" height="400"></canvas>
           <script>
             var canvas = document.getElementById("kleroterion-schema");
@@ -150,9 +158,10 @@
         </div>
       </div>
     </div>
-    <div id="whitePaper">
-      <hr />
-      <h1 class="h-title-center">WHITE PAPER</h1>
+    <div class="block" id="white-paper">
+      <div>
+        <h1 class="h-title">WHITE PAPER</h1>
+      </div>
       <div class="download">
         <a
           href="https://github.com/ethercourt/workspace/raw/master/decentralized-court/whitePaper/DAC.pdf"
@@ -161,9 +170,10 @@
         </a>
       </div>
     </div>
-    <div id="contact">
-      <hr />
-      <h1 class="h-title-center">CONTACT</h1>
+    <div class="block block-last" id="contact">
+      <div>
+        <h1 class="h-title">CONTACT</h1>
+      </div>
       <div class="contact">
         <a href='mailto:clemage@live.fr' class='mail'>✉</a>
       </div>

@@ -24,7 +24,7 @@
   }());
 
 
-var canvas = document.getElementById("justice");
+var canvas = document.getElementsByClassName("canvas-justice")[0];
 var ctx = canvas.getContext("2d");
 ctx.lineCap = "round";
 

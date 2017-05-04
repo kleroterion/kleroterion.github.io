@@ -144,42 +144,20 @@ body {
   overflow: hidden;
 }
 
-hr {
-  background-color: #448fda;
-  height: 1px;
-  border: 0;
-
-}
-
-#vision {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #000;
+.block {
+  margin: 0;
+  padding: 0 2rem 10rem 2rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#useCase {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+.block-first {
+  padding-top: 100px;
 }
 
-#howWorks {
-  width: 100%;
-  text-align: center;
-}
-
-#whitePaper {
-  width: 100%;
-  text-align: center;
-  height: 30rem;
-}
-
-#contact {
-  height: 27rem;
-  width: 100%;
-  text-align: center;
+.block-last {
+  padding-bottom: 5rem;
 }
 
 .footer {
@@ -192,16 +170,11 @@ hr {
   min-height: 100px;
 }
 
-.vision {
-  margin: 2rem 0 3rem 5rem;
-}
-
 .rwd-table {
+  margin: 0;
   border-spacing: 0;
   border-collapse: collapse;
-  margin: 5rem auto;
   max-width: 800px;
-  text-align: left;
 }
 
 .rwd-table td {
@@ -230,20 +203,17 @@ hr {
   .rwd-table td:before {
     display: none;
   }
-}
 
-@media (min-width: 480px) {
   .rwd-table td {
     display: table-cell;
     padding: .25em .5em;
     border: 1px solid #448fda;
   }
+
   .rwd-table td:first-child {
     padding-left: 0;
   }
-  .rwd-table td:last-child {
-    padding-right: 0;
-  }
+
   .item-td {
     text-align: center;
     width: 300px;
@@ -260,31 +230,8 @@ hr {
 }
 
 .rwd-table td {
-  margin: .5em 1em;
-}
-
-@media (min-width: 480px) {
-  .rwd-table td {
-    padding: 1em !important;
-  }
-}
-
-.parent {
-  margin-top: 5rem;
-  display: flex;
-}
-
-.col {
-  margin: 0 auto;
+  margin: .5rem 1rem;
   padding: 1rem;
-  width: 50%;
-}
-
-.col p {
-  margin: 10% 0;
-  float: right;
-  width: 500px;
-  text-align: right;
 }
 
 .download {
@@ -331,22 +278,23 @@ hr {
 }
 
 .h-title {
-  margin: 5rem 0 1rem 5rem;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
-.h-title-center {
-  margin: 5rem 0;
-}
-
-#justice {
+.canvas-justice {
   width: 400px;
   position: relative;
-  top: -4px;
+  top: -106px;
+}
+
+.block-vision-text {
+  max-width: 50vw;
 }
 
 @media all and (max-width: 480px) {
   body {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   h1 {
@@ -355,6 +303,11 @@ hr {
 
   h2 {
    font-size: 2rem;
+  }
+
+  .rwd-table td {
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0 !important;
   }
 
   .menu {
@@ -382,10 +335,24 @@ hr {
     text-align: left;
     margin: 10% 0;
     float: none;
-    width: 100%;
   }
 
   .col:nth-child(2) {
     display: none;
+  }
+
+  .block {
+    padding: 0 1rem 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .block-vision-text {
+    max-width: 100vw;
+  }
+
+  .h-title {
+    margin: 0 0 2rem 0;
   }
 }
