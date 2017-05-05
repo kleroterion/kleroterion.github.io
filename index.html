@@ -67,9 +67,10 @@
       </div>
     </div>
     <div class="block" id="use-cases">
-      <div class="block-use-cases-text">
+      <div>
         <h1 class="h-title">USE CASES</h1>
         <div>
+          <canvas class='canvas-justice-3' width=400 height=410></canvas>
         </div>
       </div>
       <div>
@@ -102,10 +103,10 @@
       </div>
     </div>
     <div  class="block" id="how-works">
-      <div>
-        <h1 class="h-title">HOW WORKS</h1>
-      </div>
-      <div>
+      <div class="block-how-works-text">
+        <div>
+          <h1 class="h-title">HOW WORKS</h1>
+        </div>
         <div>
           <p>
             There is several subcourt for each specialization lorem ipsum.
@@ -115,47 +116,50 @@
             Dispute will be first handled by arbitrators, but parties will have the possibility to appeal to a jury system. Both arbitrators and jury members will have game theoretical incentive to arbitrate disputes in an honest manner.
           </p>
         </div>
-        <div>
-          <canvas id="kleroterion-schema" width="600" height="400"></canvas>
-          <script>
-            var canvas = document.getElementById("kleroterion-schema");
-            if (canvas.getContext)
-            {
-              var ctx = canvas.getContext('2d');
-              ctx.lineWidth = "3";
-              ctx.strokeStyle = "#448fda";
-              ctx.strokeRect(0, 0, 170, 70);
+      </div>
 
-              ctx.strokeRect(200, 0, 170, 70);
 
-              ctx.strokeRect(400, 0, 170, 70);
+      <div>
+        <canvas id="kleroterion-schema" width="600" height="400"></canvas>
+        <script>
+          var canvas = document.getElementById("kleroterion-schema");
+          if (canvas.getContext)
+          {
+            var ctx = canvas.getContext('2d');
+            ctx.lineWidth = "3";
+            ctx.strokeStyle = "#448fda";
+            ctx.strokeRect(0, 0, 170, 70);
 
-              ctx.strokeRect(0, 90, 570, 70);
+            ctx.strokeRect(200, 0, 170, 70);
 
-              ctx.strokeRect(0, 180, 270, 70);
+            ctx.strokeRect(400, 0, 170, 70);
 
-              ctx.strokeRect(300, 180, 270, 70);
+            ctx.strokeRect(0, 90, 570, 70);
 
-              ctx.strokeRect(0, 270, 120, 70);
+            ctx.strokeRect(0, 180, 270, 70);
 
-              ctx.strokeRect(150, 270, 120, 70);
+            ctx.strokeRect(300, 180, 270, 70);
 
-              ctx.strokeRect(300, 270, 120, 70);
+            ctx.strokeRect(0, 270, 120, 70);
 
-              ctx.strokeRect(450, 270, 120, 70);
+            ctx.strokeRect(150, 270, 120, 70);
 
-              ctx.font="24px sans-serif";
-              ctx.textAlign="center";
-              ctx.textBaseline = "middle";
-              ctx.fillStyle = "#448fda";
-              ctx.fillText("Escrow", 85, 35);
-              ctx.fillText("Funding", 285, 35);
-              ctx.fillText("Insurance", 485, 35);
-              ctx.fillText("KLEROTERION", 300, 125);
-              ctx.fillText("Finance", 135, 215);//render your page
-            }
-          </script>
-        </div>
+            ctx.strokeRect(300, 270, 120, 70);
+
+            ctx.strokeRect(450, 270, 120, 70);
+
+            ctx.font="24px sans-serif";
+            ctx.textAlign="center";
+            ctx.textBaseline = "middle";
+            ctx.fillStyle = "#448fda";
+            ctx.fillText("Escrow", 85, 35);
+            ctx.fillText("Funding", 285, 35);
+            ctx.fillText("Insurance", 485, 35);
+            ctx.fillText("KLEROTERION", 300, 125);
+            ctx.fillText("Finance", 135, 215);//render your page
+          }
+        </script>
+      </div>
       </div>
     </div>
     <div class="block" id="white-paper">
@@ -184,6 +188,9 @@
       <p>Decentralized court project</p>
     </div>
   </div>
-    <script src="justice.js"></script>
+
+  <script src="justice.js"></script>
+  <script src="justice-3.js"></script>
+
 </body>
 </html>
