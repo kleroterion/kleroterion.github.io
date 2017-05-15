@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
 
-  var canvas = document.querySelector("canvas");
+  var canvas = document.getElementsByClassName("nodes")[0];;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   var ctx = canvas.getContext("2d");

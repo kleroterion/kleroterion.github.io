@@ -23,6 +23,22 @@ body {
   font-size: 1.4rem;
 }
 
+.congress {
+  position: absolute;
+  left: -350px;
+  top:-600px;
+  z-index: 2;
+  width: 1500px;
+  opacity: 0.45;
+  -ms-transform: rotate(-25deg); /* IE 9 */
+  -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+  transform: rotate(-25deg);
+}
+
+.nodes {
+  border-bottom: 1px solid #448fda;
+}
+
 .container {
   display: -webkit-flex;
   display: flex;
