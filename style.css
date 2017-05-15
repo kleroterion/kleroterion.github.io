@@ -122,7 +122,7 @@ body {
 }
 
 .active {
-  color: #ff0080;
+  color: #9448BC;
 }
 
 .space-between {
@@ -258,12 +258,12 @@ body {
   padding: 0.5rem 0.8rem;
   border: 1px solid #fff;
   text-decoration: none;
-  color: #ff0080;
+  color: #9448BC;
   font-size: 2rem;
 }
 
 .white-paper:hover {
-  border-color: #ff0080;
+  border-color: #9448BC;
 }
 
 .contact {
@@ -273,7 +273,7 @@ body {
 .mail {
   font-size: 140px;
   text-decoration: none;
-  color: #ff0080;
+  color: #9448BC;
 }
 
 #canvas-wrap { position:relative } /* Make this a positioned parent */
