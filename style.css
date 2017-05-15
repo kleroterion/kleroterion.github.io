@@ -253,6 +253,8 @@ body {
 }
 
 .download {
+  width: 100%;
+  text-align: center;
   margin-top: 7rem;
 }
 
@@ -384,6 +386,8 @@ body {
   }
 
   .download {
+    width: 100%;
+    text-align: center;
     margin-top: 1rem;
   }
 
