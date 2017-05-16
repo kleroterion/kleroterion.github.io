@@ -326,6 +326,10 @@ body {
     font-size: 1rem;
   }
 
+  .congress {
+    display: none;
+  }
+
   h1 {
     font-size: 3rem;
   }
