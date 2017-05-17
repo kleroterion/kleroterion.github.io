@@ -46,6 +46,14 @@ body {
   flex-wrap: wrap;
 }
 
+.appBar-phone {
+  display: none;
+}
+
+.appBar-phone h1{
+  padding-top: 1rem;
+}
+
 @font-face {
     font-family: code;
     src: url('code.otf');
@@ -326,6 +334,20 @@ body {
     font-size: 1rem;
   }
 
+  .appBar-phone {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    padding-left: 0;
+  }
+
+  .h-title {
+    font-size: 1.4rem;
+  }
+
   .congress {
     display: none;
   }
@@ -407,5 +429,9 @@ body {
   .block-last {
     padding-bottom: 0;
     flex-direction: column;
+  }
+
+  .mail > img {
+    width: 180px;
   }
 }
