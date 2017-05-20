@@ -184,6 +184,7 @@ body {
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
+  background: url('world.png') no-repeat center;
 }
 
 .footer {
@@ -280,7 +281,16 @@ body {
 
 .contact {
   margin-top: 3rem;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slack-icon {
+  position: relative;
+  top: -10px;
 }
 
 .mail {
