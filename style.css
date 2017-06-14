@@ -5,3 +5,17 @@
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size:cover;
 }
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar-link {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.activeLink {
+  background-color: transparent !important;
+}
