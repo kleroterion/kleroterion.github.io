@@ -1,0 +1,7 @@
+.introduction {
+    background:url('http://lifethinktravel.com/wp-content/uploads/2014/02/epidaurus.jpg') no-repeat center center;
+    min-height:100%;
+    height: 100vh;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size:cover;
+}
