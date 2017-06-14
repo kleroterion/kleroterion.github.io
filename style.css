@@ -4,22 +4,17 @@ body {
 }
 
 .introduction {
-    background:url('img/assembly.png') no-repeat;
-    min-height:100%;
-    height: 100vh;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size:cover;
+  background:url('img/assembly.png') no-repeat;
+  min-height:100%;
+  height: 100vh;
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size:cover;
 }
 
 .navbar {
-  padding-top: 30px;
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-}
-
-.navbar-link {
-  color: rgba(255, 255, 255, 1) !important;
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 
 .activeLink {
@@ -32,14 +27,14 @@ body {
 
 .phone {
   position: absolute;
-  top: 60px;
+  top: 190px;
   right: 200px;
   width: 400px;
 }
 
 .pinakion {
   position: absolute;
-  top: 250px;
+  top: 380px;
   right: 100px;
   width: 230px;
 }

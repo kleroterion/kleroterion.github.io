@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="introduction">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -91,5 +91,17 @@
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="background.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function() { // check if scroll event happened
+          if ($(document).scrollTop() > 30) { // check if user scrolled more than 50 from top of the browser window
+            $(".navbar-fixed-top").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+            $(".navbar-link").style("color", "#000", "important");
+          } else {
+            $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+          }
+        });
+      });
+    </script>
   </body>
 </html>
