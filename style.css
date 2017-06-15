@@ -29,15 +29,15 @@ body {
 
 .phone {
   position: absolute;
-  top: 20vh;
-  right: 8vw;
+  top: 25vh;
+  /*right: 8vw;*/
   width: 400px;
 }
 
 .pinakion {
   position: absolute;
-  top: 50vh;
-  right: 1vw;
+  top: 55vh;
+  right: 6vw;
   width: 230px;
 }
 
@@ -107,4 +107,19 @@ body {
   transition: background linear 650ms;
   -webkit-transition: background linear 650ms;
   background: rgb(255, 255, 255);
+}
+
+.title-section {
+  font-family: "Rift Soft";
+  color: rgb(161, 166, 203);
+  font-size: 6rem;
+}
+
+.the-justice-protocol-subtitle {
+  font-size: 12rem;
+}
+
+.iMac {
+  padding-top: 1rem;
+  width: 100%;
 }
