@@ -34,6 +34,28 @@ body {
   border-color: transparent;
 }
 
+.introduction .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.introduction .navbar-brand>img {
+  padding: 7px 14px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  width: 70px;
+}
+
+.introduction-sup {
+  position: relative;
+  top: -12px;
+  color: rgb(78, 81, 104);
+}
+
 .activeLink {
   background-color: transparent !important;
 }
