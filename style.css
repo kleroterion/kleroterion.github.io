@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Museo Sans";
+  src: url("fonts/museosans-500.otf");
+}
+
+@font-face {
+  font-family: "Rift Soft";
+  src: url("fonts/Dosis-Bold.ttf");
+}
+
+
+
 body {
   background-color: #1a1b23;
   color: #fff;
