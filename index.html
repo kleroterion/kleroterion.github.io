@@ -37,7 +37,7 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-      <div class="row">
+      <div class="row introduction-row">
         <div class="col-md-5 col-md-offset-1">
           <img src="img/phone.png" class="phone" />
           <img src="img/pinakion.png" class="pinakion" />
@@ -148,7 +148,27 @@
     </section>
 
     <section class="applications">
-      <h2>APPLICATIONS</h2>
+
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+                <h2 class="applications-title-section">APPLICATIONS</h2>
+          <p class="applications-introduction-text">
+            Kleroterion is a protocol for fast, inexpensive, honest and transparent
+justice.
+          </p>
+          <p class="applications-content-text-1">
+            An entrepreneur hires a freelancer
+            for a software development gig.<br />
+            A dispute arises about the scope of the contract.
+          </p>
+          <p class="applications-content-text-2">
+            Should the freelancer give the money back to his client?<br />
+          </p>
+          <p class="applications-content-text-1">
+            A jury of software experts analyze the evidence and votes a verdict.<br />
+            A smart contract transfers the money to the winning party.
+          </p>
+      </div>
     </section>
 
     <section class="features">
@@ -176,9 +196,10 @@
         $(window).scroll(function() { // check if scroll event happened
           if ($(document).scrollTop() > 30) { // check if user scrolled more than 50 from top of the browser window
             $(".navbar-fixed-top").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-            $(".navbar-link").style("color", "#000", "important");
+            $(".navbar-link").css("color", "#000", "important");
           } else {
-            $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+            $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent\
+            $(".navbar-link").css("color", "#fff", "important");
           }
         });
       });

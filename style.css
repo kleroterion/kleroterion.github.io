@@ -22,7 +22,7 @@ body {
 
 .introduction {
   background:url('img/assembly.png') no-repeat;
-  min-height:100%;
+  min-height: 100%;
   height: 100vh;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size:cover;
@@ -65,6 +65,12 @@ body {
 .bottom-align-text {
 
 }
+
+.introduction-row {
+  min-height: 100%;
+  height: 80vw;
+}
+
 
 .title-protocol {
   font-weight: bold;
@@ -129,8 +135,13 @@ body {
   font-size: 6rem;
 }
 
+.how-it-works {
+  min-height: 30%;
+  min-height: 30vw;
+}
+
 .how-it-works-title-section {
-  margin-bottom: 10rem;
+  padding: 10rem 0;
   font-family: "Rift Soft";
   color: rgb(255, 255, 255);
   font-size: 6rem;
@@ -145,6 +156,36 @@ body {
   width: 100%;
 }
 
-.how-it-works {
-  margin-top: 12rem;
+
+.applications {
+  padding-top: 200px;
+  min-height: 70%;
+  min-height: 70vw;
+  background: url("img/ipad.png");
+  background-size: cover;
+}
+
+.applications-title-section {
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 10rem;
+}
+
+.applications-introduction-text {
+  font-family: "Museo Sans";
+  color: rgb(127, 131, 163);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.applications-content-text-1 {
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: gray;
+  width: 400px;
+}
+
+.applications-content-text-2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
 }
