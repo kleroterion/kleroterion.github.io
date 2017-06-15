@@ -4,8 +4,11 @@
 }
 
 @font-face {
-  font-family: "Rift Soft";
-  src: url("fonts/Dosis-Bold.ttf");
+  font-family: 'Rift Soft';
+  src: url('fonts/riftsoft-regular-webfont.woff2') format('woff2'),
+       url('fonts/riftsoft-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
