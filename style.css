@@ -1,6 +1,8 @@
 body {
   background-color: #1a1b23;
   color: #fff;
+  font-family: "Museo Sans";
+  overflow-x: hidden;
 }
 
 .introduction {
@@ -27,24 +29,82 @@ body {
 
 .phone {
   position: absolute;
-  top: 190px;
-  right: 200px;
+  top: 20vh;
+  right: 8vw;
   width: 400px;
 }
 
 .pinakion {
   position: absolute;
-  top: 380px;
-  right: 100px;
+  top: 50vh;
+  right: 1vw;
   width: 230px;
 }
 
 .introduction-text {
+  padding: 0;
+  margin: 0;
   height: 50vh;
 }
 
-  .bottom-align-text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+.bottom-align-text {
+
+}
+
+.title-protocol {
+  font-weight: bold;
+  position: relative;
+  top: 35vh;
+  font-size: 16px;
+
+  color: rgb(255, 255, 255);
+}
+
+.logo-ethereum {
+  width: 35px;
+  padding: 0 5px;
+}
+
+.title {
+  position: relative;
+  top: 35vh;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  font-family: "Rift Soft";
+  color: rgb(161, 166, 203);
+}
+
+.top-description {
+  position: relative;
+  top: 36vh;
+  font-size: 20px;
+}
+
+.top-call-to-action {
+  position: relative;
+  top: 39vh;
+}
+
+.btn-how-it-works {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  color: rgb(49, 56, 68);
+  font-weight: bold;
+}
+
+.btn-how-it-wp {
+  margin-left: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(78, 81, 104);
+  border-color: transparent;
+}
+
+.btn-how-it-wp:hover {
+  border-color: transparent;
+  transition: background linear 650ms;
+  -webkit-transition: background linear 650ms;
+  background: rgb(255, 255, 255);
+}
