@@ -71,7 +71,6 @@ body {
   position: relative;
   top: 35vh;
   font-size: 16px;
-
   color: rgb(255, 255, 255);
 }
 
@@ -124,9 +123,16 @@ body {
   background: rgb(255, 255, 255);
 }
 
-.title-section {
+.the-justice-protocol-title-section {
   font-family: "Rift Soft";
   color: rgb(161, 166, 203);
+  font-size: 6rem;
+}
+
+.how-it-works-title-section {
+  margin-bottom: 10rem;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
   font-size: 6rem;
 }
 
@@ -137,4 +143,8 @@ body {
 .iMac {
   padding-top: 1rem;
   width: 100%;
+}
+
+.how-it-works {
+  margin-top: 12rem;
 }
