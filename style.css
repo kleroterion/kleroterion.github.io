@@ -240,6 +240,28 @@ body {
   font-size: 6rem;
 }
 
+.team-title-section {
+  padding: 5rem 0;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+}
+
+.join-team-title-section {
+  position: relative;
+  top: 9rem;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+
+.advisors-title-section {
+  padding: 5rem 0;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+}
+
 
 @media(min-width:767px) {
     .navbar {
