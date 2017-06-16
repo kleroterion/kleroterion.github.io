@@ -6,10 +6,17 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
     <section class="introduction">
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -19,20 +26,23 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo_kleroterion.png" class="navbar-logo" />Kleroterion<sup class="introduction-sup">Alpha</sup></a>
+            <a class="navbar-brand" href="#page-top"><img src="img/logo_kleroterion.png" class="navbar-logo" />Kleroterion<sup class="introduction-sup">Alpha</sup></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav pull-right">
-              <li class="activeLink"><a href="#">System</a></li>
-              <li><a href="#" class="navbar-link">How it works</a></li>
-              <li><a href="#" class="navbar-link">App</a></li>
-              <li><a href="#" class="navbar-link">Crowdfunding</a></li>
-              <li><a href="#" class="navbar-link">Team</a></li>
-              <li><a href="#" class="navbar-link">Advisor</a></li>
-              <li><a href="#" class="navbar-link">Faq</a></li>
-              <li><a href="#" class="navbar-link">Contact</a></li>
+              <li class="hidden">
+                <a class="page-scroll" href="#page-top"></a>
+              </li>
+              <li><a href="#protocol" class="navbar-link page-scroll">Protocol</a></li>
+              <li><a href="#how-it-works" class="navbar-link page-scroll">How it works</a></li>
+              <li><a href="#applications" class="navbar-link page-scroll">Applications</a></li>
+              <li><a href="#features" class="navbar-link page-scroll">Features</a></li>
+              <li><a href="#team" class="navbar-link page-scroll">Team</a></li>
+              <li><a href="#advisor" class="navbar-link page-scroll">Advisor</a></li>
+              <li><a href="#faq" class="navbar-link">Faq</a></li>
+              <li><a href="#contact" class="navbar-link">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -61,12 +71,12 @@
       </div>
     </section>
 
-    <section class="the-justice-protocol">
+    <section class="the-justice-protocol" id="protocol">
       <div class="row">
         <div class="col-md-5 col-md-offset-1">
-          <h2 class="the-justice-protocol-title-section">THE JUSTICE<br /><span class="the-justice-protocol-subtitle">PROTOCOLE</span></h2>
+          <h2 class="the-justice-protocol-title-section">THE JUSTICE<br /><span class="the-justice-protocol-subtitle">PROTOCOL</span></h2>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-9">
               <p>The blockchain ushers a world of contracts enforced by code.</p>
               <p>
                 Smart contracts are smart enough to self-execute as programmed,
@@ -81,21 +91,6 @@
               </p>
               <button type="button" class="btn btn-default">How it works?</button>
             </div>
-            <div class="col-md-6">
-              <p>
-                An entrepreneur hires a freelancer for a software development gig. A dispute arises about the scope of the contract.
-              </p>
-              <p>
-                Should the freelancer give the money back to his client?
-              </p>
-              <p>
-                A startup raises money with a crowdfunding campaign. Funds will be released after certain milestones are reached. Should the next payment be made?
-              </p>
-              <p>
-                A band uploads a song on a music platform. The song is flagged for plagiarism. Should the song be deleted?
-              </p>
-              <button type="button" class="btn btn-default">Download the white paper</button>
-            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -104,7 +99,7 @@
       </div>
     </section>
 
-    <section class="how-it-works">
+    <section class="how-it-works" id="how-it-works">
       <h2 class="how-it-works-title-section text-center title-how-it-works">HOW IT WORKS?</h2>
       <div class="row">
         <div class="col-md-2 col-md-offset-2 text-center">
@@ -149,7 +144,7 @@
 
     <section class="applications">
 
-      <div class="row">
+      <div class="row" id="applications">
         <div class="col-md-5 col-md-offset-1">
                 <h2 class="applications-title-section">APPLICATIONS</h2>
           <p class="applications-introduction-text">
@@ -171,36 +166,50 @@ justice.
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <h2>FEATURES</h2>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
       <h2>TEAM</h2>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
       <h2>FRENQUENTLY ASKED QUESTION</h2>
     </section>
 
-    <section class="contact"></section>
+    <section class="contact" id="contact"></section>
 
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="background.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script>
       $(document).ready(function(){
-        $(window).scroll(function() { // check if scroll event happened
-          if ($(document).scrollTop() > 30) { // check if user scrolled more than 50 from top of the browser window
+        $(window).scroll(function() {
+          if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
             $(".navbar-fixed-top").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
             $(".navbar-link").css("color", "#000", "important");
           } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
             $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent\
             $(".navbar-link").css("color", "#fff", "important");
           }
+        });
+
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $(document).on('click', 'a.page-scroll', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
         });
       });
     </script>
