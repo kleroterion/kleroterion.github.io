@@ -11,8 +11,6 @@
   font-style: normal;
 }
 
-
-
 body {
   background-color: #1a1b23;
   color: #fff;
@@ -274,6 +272,31 @@ body {
   border: none;
 }
 
+.contact-title-section {
+  padding: 5rem 0;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+
+.slack-icon {
+  padding-right: 4rem;
+}
+
+.form-input {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px rgb(127, 131, 163);
+}
+
+.form-input:hover {
+  border: none;
+  border-bottom: solid 1px rgb(127, 131, 163);
+}
+
+footer {
+  padding: 3rem;
+}
 
 @media(min-width:767px) {
     .navbar {
@@ -286,8 +309,4 @@ body {
     .top-nav-collapse {
         padding: 0;
     }
-}
-
-footer {
-  padding: 3rem;
 }
