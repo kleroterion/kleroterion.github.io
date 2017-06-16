@@ -262,6 +262,18 @@ body {
   font-size: 5rem;
 }
 
+.faq-title-section {
+  padding: 5rem 0;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+}
+
+.panel {
+  background: transparent;
+  border: none;
+}
+
 
 @media(min-width:767px) {
     .navbar {
@@ -274,4 +286,8 @@ body {
     .top-nav-collapse {
         padding: 0;
     }
+}
+
+footer {
+  padding: 3rem;
 }
