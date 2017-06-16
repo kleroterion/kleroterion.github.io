@@ -219,6 +219,27 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.rect {
+  border-style: solid;
+  border-width: 0.05em 0 0 0;
+  border-color: rgb(219, 180, 113);
+  background-color: rgba(217, 217, 217, 0);
+  opacity: 0.2;
+}
+
+
+.app-icon {
+  position: relative;
+  top: 50px;
+}
+
+.app-title-section {
+  padding: 5rem 0;
+  font-family: "Rift Soft";
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+}
+
 
 @media(min-width:767px) {
     .navbar {
