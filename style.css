@@ -20,7 +20,7 @@ body {
 }
 
 .introduction {
-  background:url('img/assembly.png') no-repeat;
+  background:url('img/assembly.jpg') no-repeat;
   min-height: 100%;
   height: 100vh;
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
