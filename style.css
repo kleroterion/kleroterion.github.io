@@ -176,6 +176,12 @@ body {
   font-size: 6rem;
 }
 
+.how-it-works-text {
+  font-color: gray;
+}
+
+
+
 .iMac {
   padding-top: 3rem;
   width: 100%;
@@ -309,6 +315,10 @@ body {
   border-radius: 3px;
   background-color: rgb(131, 137, 177);
   font-size: 1.5rem;
+}
+
+.contributor {
+  padding-top: 3rem;
 }
 
 footer {
