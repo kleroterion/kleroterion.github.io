@@ -164,6 +164,14 @@ body {
   font-size: 10rem;
 }
 
+.the-justice-protocol-introduction {
+  font-size: 3rem;
+}
+
+.the-justice-protocol-inline {
+  color: rgb(161, 166, 203);
+}
+
 .how-it-works {
   min-height: 30%;
   min-height: 30vw;
