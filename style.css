@@ -259,6 +259,13 @@ body {
   font-size: 4rem;
 }
 
+.join-team-contact-us {
+  color: white;
+  text-decoration: underline;
+  text-align: right;
+}
+
+
 .advisors-title-section {
   padding: 5rem 0;
   font-family: "Rift Soft";
@@ -317,8 +324,13 @@ body {
   font-size: 1.5rem;
 }
 
+.status {
+  color: rgb(179, 152, 95);
+}
+
 .contributor {
   padding-top: 3rem;
+  color: gray;
 }
 
 footer {
