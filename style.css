@@ -322,6 +322,8 @@ body {
 }
 
 footer {
+  color: gray;
+  text-align: center;
   padding: 3rem;
 }
 
