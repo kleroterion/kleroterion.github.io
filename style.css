@@ -24,8 +24,8 @@ h3 {
 }
 
 .navbar-logo {
-  width: 100%;  object-fit: contain;
-
+  width: 70px;
+  object-fit: contain;
 }
 
 .introduction {
