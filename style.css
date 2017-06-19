@@ -347,6 +347,10 @@ footer {
   padding: 3rem;
 }
 
+.footer-mail-to {
+  color: rgb(179, 152, 95);
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
