@@ -23,6 +23,10 @@ h3 {
   font-size: 2.2rem;
 }
 
+.navbar-logo {
+  width: 100%;  object-fit: contain;
+
+}
 
 .introduction {
   background:url('img/assembly.jpg') no-repeat;
