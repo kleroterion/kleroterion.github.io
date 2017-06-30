@@ -353,6 +353,10 @@ h3 {
   color: gray;
 }
 
+.form-input {
+  color: #fff;
+}
+
 footer {
   color: gray;
   text-align: center;
