@@ -45,6 +45,7 @@ h3 {
   display: flex;
   align-items: center;
 }
+
 .introduction .navbar-brand>img {
   padding: 7px 14px;
 }
@@ -378,4 +379,34 @@ footer {
     .top-nav-collapse {
         padding: 0;
     }
+}
+
+@media only screen and (max-width: 768px) {
+  .introduction {
+    height: auto;
+    padding-top: 60px;
+    background: url('img/assembly.jpg') no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size:cover;
+  }
+
+  .introduction-row {
+    height: auto;
+  }
+
+  .the-justice-protocol-title-section {
+    font-size: 20px;
+  }
+
+  .the-justice-protocol-subtitle {
+    font-size: 30px;
+  }
+
+  .the-justice-protocol-introduction {
+    font-size: 18px;
+  }
+
+  .applications-title-section {
+    font-size: 30px;
+  }
 }
