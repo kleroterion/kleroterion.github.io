@@ -47,7 +47,9 @@ Suspendisse porttitor felis quis elit iaculis accumsan. Cras scelerisque ut mi s
 Vestibulum convallis elit nec leo interdum, volutpat vehicula eros tincidunt. Duis iaculis, ipsum et posuere sagittis, magna ante scelerisque ligula, vitae posuere arcu odio et leo. Proin interdum, dui at malesuada ornare, nisi justo vulputate eros, tincidunt volutpat nibh lorem eget neque. Aliquam erat volutpat. Cras vitae finibus ligula. Quisque auctor, turpis vitae pulvinar suscipit, justo massa posuere sem, id vestibulum urna sem eget dui. Nullam eu egestas nisl. Sed pharetra nulla consectetur pulvinar cursus. Maecenas iaculis urna ut neque egestas, eu fermentum mi facilisis. Morbi varius nisi id mattis mattis. Quisque consectetur, velit et condimentum auctor, massa felis mattis ligula, quis porttitor justo quam eget nisi. Phasellus a convallis nunc, ut lobortis dui. Maecenas pretium diam quis erat dapibus imperdiet.
 
 Sed quis ultrices est. Sed sit amet massa nec mauris sollicitudin aliquet id a est. Sed quis nibh vitae ipsum posuere eleifend. Quisque aliquam ut purus eget feugiat. Donec eget lacus tempor, scelerisque est in, aliquam velit. Sed eleifend velit quis mauris dapibus, a ultricies nibh ornare. Nullam id aliquam velit, in pellentesque urna.
-
+<div id="home">
+  Home
+</div>
 Vestibulum diam felis, varius sit amet leo a, tincidunt tempor nisl. Sed sit amet viverra libero. Sed tempus urna a turpis faucibus ornare. Quisque scelerisque nisl id nisi pulvinar, ut mollis mauris maximus. Quisque sed lacus imperdiet, vehicula purus nec, ultricies libero. Curabitur condimentum felis arcu. Proin aliquet quis neque non ornare. Cras consequat feugiat ornare. Etiam facilisis nulla velit, eget ullamcorper mauris luctus sed. Praesent iaculis varius nibh, a dictum odio ullamcorper vitae. Suspendisse pellentesque enim nec commodo fringilla. Donec id velit mattis, fringilla tortor eu, luctus neque. Sed at interdum nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi sit amet turpis efficitur, auctor leo ac, luctus neque.
 
 Vestibulum hendrerit bibendum purus viverra feugiat. Curabitur condimentum vitae libero eu tincidunt. Quisque id leo neque. Nunc sed eros quis ipsum dictum pellentesque ac feugiat neque. Integer pulvinar tempor arcu, eget semper nulla vehicula vel. Quisque eu ex a diam ultricies rhoncus. Nunc dignissim consectetur dolor, a faucibus dui convallis id. Nulla egestas pulvinar lacus id porta. In sit amet neque lorem. Ut rhoncus eu ipsum in bibendum.
@@ -70,22 +72,6 @@ Vivamus fringilla mi lacus, eget consequat urna finibus id. Aenean sapien purus,
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- ScrollSpy -->
-    <script>
-      $('body').scrollspy({ target: '#navbar-top' })
-      $("#navbar-top ul li a[href^='#']").on('click', function(e) {
-       // prevent default anchor click behavior
-       e.preventDefault();
-       // store hash
-       var hash = this.hash;
-       // animate
-       $('html, body').animate({
-           scrollTop: $(hash).offset().top
-         }, 500, function(){
-           // when done, add hash to url
-           // (default click behaviour)
-           window.location.hash = hash;
-         });
-      });
-    </script>
+    <script src="./js/scrollSpy.js"></script>
   </body>
 </html>
